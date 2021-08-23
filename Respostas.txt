@@ -1,0 +1,82 @@
+Lista 2
+
+1)a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
+if a + b > c and a + c >b and b + c >a:
+    if a==b==c:
+        print ('Você tem um triangulo equilátero')
+    elif a!=b!=c:
+        print ('Você tem um triangulo escaleno')
+    else:
+        print ('Você tem um triangulo isósceles')
+else:
+    print ('não é um trigangulo')
+
+2)ano = int(input('Ano: '))
+if ano%4==0 and ano%100!=0 or ano%400==0:
+    print('Bissexto')
+else:
+    print('Não é bissexto')
+
+3)peso_peixe = float(input('Peso:'))
+if peso_peixe <=50:
+    excesso = 0
+    multa = 0
+    print ('Você teve um excesso de:',excesso,'e uma multa de:',multa)
+else:
+    excesso = peso_peixe - 50
+    multa = excesso * 4
+    print (f'Voce teve um excesso de: {excesso:.2f} e uma multa de: {multa:.2f}') 
+
+4)a = int(input('Coloque um número:'))
+b = int(input('Coloque um número:'))
+c = int(input('Coloque um número:'))
+numrs = (a,b,c)
+if b<a>c:
+    print (a)
+if a<b>c:
+    print (b)
+if a<c>b:
+    print (c)
+
+5)a = int(input('Coloque um número:'))
+b = int(input('Coloque um número:'))
+c = int(input('Coloque um número:'))
+numrs = (a,b,c)
+if b<a>c:
+    print (a)
+if a<b>c:
+    print (b)
+if a<c>b:
+    print (c)
+if b>a<c:
+    print (a)
+if a>b<c:
+    print (b)
+if a>c<b:
+    print (c)
+
+6)salario = float(input('Ganho por hora: '))
+horas = float(input('horas trabalhadas: '))
+salario_bruto = salario * horas
+ir = salario_bruto * 0.11
+inss = salario_bruto * 0.08
+sindicato = salario_bruto * 0.05
+desconto = ir + inss + sindicato
+salario_liquido = salario_bruto - desconto
+print (f'Salario bruto: {salario_bruto:.2f} , Salario liquido: {salario_liquido:.2f}')
+print (f'Inss : {inss:.2f} , Sindicato: {sindicato:.2f}')
+
+7)metros = int(input('Metros: '))
+if metros % 54 == 0:
+  latas = m / 54
+else:
+  latas = int(metros / 54) + 1
+
+valor = latas * 80
+print (f'Sera necessario {latas} latas')
+print (f'Total: R$ {valor:.2f}')
+
+
+
